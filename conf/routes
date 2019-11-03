@@ -1,0 +1,9 @@
+GET         /callback            ntile.gateways.inbound.rest.AuthorizationGateway.callback
+POST        /callback            ntile.gateways.inbound.rest.AuthorizationGateway.callback
+GET         /api/logout          ntile.gateways.inbound.rest.AuthorizationGateway.logout
+
+GET         /                    ntile.controllers.HomeController.index
+GET         /api/invites         ntile.gateways.inbound.rest.InviteQueryGateway.invites(offset: Int, limit: Int)
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)
